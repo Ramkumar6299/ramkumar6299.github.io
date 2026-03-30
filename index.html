@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ram Kumar - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #020617);
+      color: var(--text);
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin: 0;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-top: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: var(--accent);
+      color: #000;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(17, 24, 39, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 20px;
+      border-radius: 16px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    h2 {
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li { margin-bottom: 6px; }
+
+    .projects a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ram Kumar K</h1>
+    <p class="subtitle">Senior Analyst | Java | Spring Boot | Azure</p>
+    <a class="btn" href="#projects">View Projects</a>
+  </header>
+
+  <div class="container">
+
+    <div class="grid">
+
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          Backend developer with 6+ years of experience building scalable Java and Spring Boot microservices. Strong focus on event-driven systems using Kafka and cloud-native solutions on Azure.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Skills</h2>
+        <ul>
+          <li>Java (8, 17), Spring Boot, Quarkus</li>
+          <li>Kafka, REST APIs</li>
+          <li>MongoDB, Cosmos DB, PostgreSQL</li>
+          <li>Azure, Docker, Kubernetes</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Experience</h2>
+        <p>
+          <strong>Senior Analyst – Standard Chartered</strong><br/><br/>
+          Built scalable backend services for workflow-based systems using Java and Spring Boot.<br/><br/>
+          • Designed REST APIs for business workflows<br/>
+          • Integrated Kafka for event-driven processing<br/>
+          • Worked with Cosmos DB for scalable storage<br/>
+          • Improved system efficiency and reliability
+        </p>
+      </div>
+
+      <div class="card projects" id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="#">Personal Project 1 (Coming Soon)</a></li>
+          <li><a href="#">Personal Project 2 (Coming Soon)</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Contact</h2>
+        <p>Email: kramkumar6299@gmail.com</p>
+        <p>GitHub: https://github.com/Ramkumar6299</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Ram Kumar
+  </footer>
+
+</body>
+</html>
